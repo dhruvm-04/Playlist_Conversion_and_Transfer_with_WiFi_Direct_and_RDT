@@ -4,8 +4,8 @@ import requests
 import json
 
 # Spotify API Credentials
-SPOTIFY_CLIENT_ID = "b870fc2e28144646b4242053c888436a"
-SPOTIFY_CLIENT_SECRET = "2f22357e884e478c939fab76901cbdae"
+SPOTIFY_CLIENT_ID = "your_cliend_id"
+SPOTIFY_CLIENT_SECRET = "your_secret_id"
 REDIRECT_URI = "http://127.0.0.1:8888/callback"
 SCOPE = "playlist-read-private"
 
