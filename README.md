@@ -26,4 +26,3 @@ The system ensures **secure, reliable, and efficient** transfer using encryption
 ## Future Improvements Planned
 - Graphical User Interface (**GUI**)
 - **Mobile** Compatibility
-- 
