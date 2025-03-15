@@ -1,0 +1,5 @@
+spotipy
+requests
+cryptography
+pywifi
+ytmusicapi
