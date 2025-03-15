@@ -13,14 +13,16 @@ Use command `pip install -r lib_reqs.txt` on your command prompt.
 
 ## **Steps to Run**
 
-   - ### **Start Wi-Fi Direct**  
-      ```sh
-      python wifi_direct.py
+  - Before running `get_playlist.py`, create an app on sporify developer dashboard and update the id variables with your credentials.
+  - Similarly, for the YT Music API, get your cookie id and authentication id from the inspect element network tab to use in the code.
       
    - ### **Fetch a Spotify Playlist**
-   
       ```sh
       python get_playlist.py
+
+  - ### **Start Wi-Fi Direct**  
+      ```sh
+      python wifi_direct.py
    
    - ### **Send Playlist Over Wi-Fi Direct (Sender)**
      ```sh
