@@ -9,22 +9,25 @@ Use command `pip install -r lib_reqs.txt` on your command prompt.
   pip install cryptography
   pip install pywifi
   pip install ytmusicapi
----   
-   - ## **Start Wi-Fi Direct**  
+- In case of any issues, check the installations using `pip list | grep -E "spotipy|requests|cryptography|pywifi|ytmusicapi"`
+
+## **Steps to Run**
+
+   - ### **Start Wi-Fi Direct**  
       ```sh
       python wifi_direct.py
       
-   - ## **Fetch a Spotify Playlist**
+   - ### **Fetch a Spotify Playlist**
    
       ```sh
       python get_playlist.py
    
-   - ## **Send Playlist Over Wi-Fi Direct (Sender)**
+   - ### **Send Playlist Over Wi-Fi Direct (Sender)**
      ```sh
      python sender_rdt_wifi_direct.py
    
-   - ## **Receive & Import Playlist (Receiver)**
+   - ### **Receive & Import Playlist (Receiver)**
      ```sh
      python receiver_rdt_wifi_direct.py
    
-   - ## **Choose Platform for Import** (Spotify, Apple Music, or YouTube Music)
+   - ### **Choose Platform for Import** (Spotify, Apple Music, or YouTube Music)
