@@ -1,4 +1,4 @@
-# Wi-Fi Direct Playlist Sharing
+# Wi-Fi Direct Playlist Sharing - **ONGOING PROJECT**
 A **Python** project based on the concepts of **Computer Networks** that enables **Spotify playlist sharing over Wi-Fi Direct with cross platform conversion options**.
 It supports cross-platform playlist conversion, allowing users to fetch Spotify playlists and retrieve equivalent links for Apple Music & YouTube Music.
 The system ensures **secure, reliable, and efficient** transfer using encryption and Reliable Data Transfer (RDT) mechanisms.
