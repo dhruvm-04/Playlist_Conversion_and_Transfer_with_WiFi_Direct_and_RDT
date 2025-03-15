@@ -1,8 +1,14 @@
 # **How to Run**
 ## **Requirements**
 Before proceeding, make sure you have the following libraries and packages installed on your system.
+Alternatively, you may use the `lib_reqs.txt` text file to install all packages simultaneously.
+Use command `pip install -r lib_reqs.txt` on your command prompt.
 - ```sh
-  pip install spotipy requests cryptography pywifi ytmusicapi
+  pip install spotipy
+  pip install requests
+  pip install cryptography
+  pip install pywifi
+  pip install ytmusicapi
 ---   
    - ## **Start Wi-Fi Direct**  
       ```sh
