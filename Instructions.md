@@ -13,7 +13,7 @@ Use command `pip install -r lib_reqs.txt` on your command prompt.
 
 ## **Steps to Run**
 
-  - Before running `get_playlist.py`, create an app on sporify developer dashboard and update the id variables with your credentials.
+  - Before running `get_playlist.py`, create an app on sporify developer dashboard and update the id variables with your credentials. After that, please change the file path in the `receiver_rdt_wifi_direct.py` file to the one on your system.
   - Similarly, for the YT Music API, get your cookie id and authentication id from the inspect element network tab and create a json file named headers_auth with those 2 to use in the code.
       
    - ### **Fetch a Spotify Playlist**
