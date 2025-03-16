@@ -77,7 +77,7 @@ if playlist_info:
     print("Playlist fetched successfully!")
 
     # Define Save Path
-    save_path = r"C:\Dhruv\PESU\Subjects\Sem 4\CN\MiniProject\playlist.json"
+    save_path = r"<YOUR FOLDER PATH HERE>\playlist.json"
 
     # Save JSON File
     with open(save_path, "w", encoding="utf-8") as file:
