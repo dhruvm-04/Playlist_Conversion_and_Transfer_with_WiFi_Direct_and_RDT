@@ -1,8 +1,10 @@
 import socket
 import json
+import webbrowser
 import struct
 import os
 from cryptography.fernet import Fernet
+from ytmusicapi import YTMusic
 
 # Constants
 PORT = 12345
@@ -113,3 +115,62 @@ try:
 except Exception as e:
     print(f"Error processing file: {e}")
     exit(1)
+
+# Platform selection
+print("\nWhere would you like to import the playlist?")
+print("1. Spotify\n2. Apple Music\n3. YouTube Music")
+choice = input("Enter choice (1-3): ").strip()
+
+# YouTube Music integration
+if choice == "3":
+    try:
+        print("\nCreating YouTube Music playlist...")
+        
+        # Safe playlist name handling
+        yt_playlist_name = "Shared Playlist"  # Default name
+        if playlist_name and isinstance(playlist_name, str):
+            yt_playlist_name = f"{playlist_name} (Shared)"
+            
+        try:
+            yt = YTMusic("headers_auth.json")
+            playlist_id = yt.create_playlist(
+                yt_playlist_name, 
+                "Playlist imported via Wi-Fi Direct", "PUBLIC"
+            )
+            print(f"Playlist '{yt_playlist_name}' created!")
+            
+            # Add songs
+            video_ids = []
+            for song in playlist_data.get("tracks", []):
+                if not isinstance(song, dict):
+                    continue
+                    
+                yt_id = song.get("youtube_music_id", "")
+                if isinstance(yt_id, str) and "v=" in yt_id:
+                    video_id = yt_id.split("v=")[-1].split("&")[0]
+                    video_ids.append(video_id)
+            
+            if video_ids:
+                yt.add_playlist_items(playlist_id, video_ids)
+                print(f"Added {len(video_ids)} songs to YouTube Music")
+                print(f"Open: https://music.youtube.com/playlist?list={playlist_id}")
+            else:
+                print("No valid YouTube Music songs found.")
+                
+        except Exception as e:
+            print(f"YouTube Music error: {e}")
+            
+    except Exception as e:
+        print(f"Unexpected error: {e}")
+
+# Handle other platforms
+elif choice == "1":
+    print("Opening Spotify links...")
+    for song in playlist_data.get("tracks", []):
+        if isinstance(song, dict) and isinstance(song.get("spotify_id"), str):
+            webbrowser.open(song["spotify_id"])
+elif choice == "2":
+    print("Opening Apple Music links...")
+    for song in playlist_data.get("tracks", []):
+        if isinstance(song, dict) and isinstance(song.get("apple_music_id"), str):
+            webbrowser.open(song["apple_music_id"])
