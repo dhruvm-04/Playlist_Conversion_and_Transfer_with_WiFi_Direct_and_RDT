@@ -26,3 +26,8 @@ The system ensures **secure, reliable, and efficient** transfer using encryption
 ## Future Improvements Planned
 - Graphical User Interface (**GUI**)
 - **Mobile** Compatibility
+
+
+---
+DISCLAIMER: THIS APP WILL **NOT** WORK FOR USERS **NOT WHITELISTED** ON GOOGLE CLOUD CONSOLE
+PLEASE **SET UP YOUR GOOGLE CLOUD** CONSOLE APP BEFORE USING THIS APP
