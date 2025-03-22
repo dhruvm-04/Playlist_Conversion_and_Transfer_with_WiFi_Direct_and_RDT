@@ -5,6 +5,7 @@ The system ensures **secure, reliable, and efficient** transfer using encryption
 
 ## Features
 - Fetch Spotify playlists, extract song data & retrieve their links for **Apple Music & YouTube Music**, adding them to a json file for further usage.
+- **Cryptography** to encrypt chunks before transmission, with an encryption key.
 -  **Wi-Fi Direct connectivity** for sharing playlists among users, without internet access.
 -  **End-to-end encryption** using the symmetric encryption of `cryptography.fernet` library of Python.
 -  **Reliable Data Transfer (RDT)** with packet loss handling.
