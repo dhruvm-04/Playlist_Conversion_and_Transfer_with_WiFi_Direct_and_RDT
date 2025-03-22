@@ -6,7 +6,7 @@ import googleapiclient.errors
 
 SCOPES = ["https://www.googleapis.com/auth/youtube.force-ssl"]
 
-CLIENT_SECRETS_FILE = r"C:\Dhruv\PESU\Subjects\Sem 4\CN\MiniProject\trials\oauth.json"
+CLIENT_SECRETS_FILE = r"YOUR_CLIENT_SECRETS_FILE_PATH"
 
 
 def authenticate_youtube():
@@ -44,7 +44,7 @@ def add_video_to_playlist(youtube, playlist_id, video_id):
 
 
 def main():
-    with open(r"C:\Dhruv\PESU\Subjects\Sem 4\CN\MiniProject\trials\newplst.json", "r", encoding="utf-8") as file:
+    with open(r"YOUR_PLAYLIST_JSON_FILE_PATH", "r", encoding="utf-8") as file:
         playlist_data = json.load(file)
     
     youtube = authenticate_youtube()
