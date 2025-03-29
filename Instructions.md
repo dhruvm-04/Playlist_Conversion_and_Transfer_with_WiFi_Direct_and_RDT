@@ -24,4 +24,6 @@ Use command `pip install -r lib_reqs.txt` on your command prompt.
      ```sh
      python sender_receiver.py
    
-   - ### **Choose Platform for Import** (Spotify, Apple Music, or YouTube Music)
+   - ### **Create Playlist on Platform**
+     ```sh
+     python create.py
