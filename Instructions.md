@@ -19,17 +19,9 @@ Use command `pip install -r lib_reqs.txt` on your command prompt.
    - ### **Fetch a Spotify Playlist**
       ```sh
       python get_playlist.py
-
-  - ### **Start Wi-Fi Direct**  
-      ```sh
-      python wifi_direct.py
    
-   - ### **Send Playlist Over Wi-Fi Direct (Sender)**
+   - ### **Send/Receive Playlist Over Wi-Fi Direct (Sender)**
      ```sh
-     python sender_rdt_wifi_direct.py
-   
-   - ### **Receive & Import Playlist (Receiver)**
-     ```sh
-     python receiver_rdt_wifi_direct.py
+     python sender_receiver.py
    
    - ### **Choose Platform for Import** (Spotify, Apple Music, or YouTube Music)
