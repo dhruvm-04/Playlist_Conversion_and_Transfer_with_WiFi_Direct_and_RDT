@@ -9,6 +9,8 @@ Use command `pip install -r lib_reqs.txt` on your command prompt.
   pip install cryptography
   pip install pywifi
   pip install ytmusicapi
+  pip install google-auth-oauthlib
+  pip install google-api-python-client
 - In case of any issues, check the installations using `pip list | grep -E "spotipy|requests|cryptography|pywifi|ytmusicapi"`
 
 ## **Steps to Run**
