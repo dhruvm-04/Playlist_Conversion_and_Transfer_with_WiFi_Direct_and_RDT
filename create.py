@@ -10,8 +10,8 @@ SCOPES_YT = ["https://www.googleapis.com/auth/youtube.force-ssl"]
 SCOPES_SPOTIFY = ["playlist-modify-public", "playlist-modify-private"]
 
 CLIENT_SECRETS_FILE = r"C:\Dhruv\PESU\Subjects\Sem 4\CN\MiniProject\trials\oauth.json"
-SPOTIFY_CLIENT_ID = "b870fc2e28144646b4242053c888436a"
-SPOTIFY_CLIENT_SECRET = "2f22357e884e478c939fab76901cbdae"
+SPOTIFY_CLIENT_ID = "YOUR_CLIENT_ID"
+SPOTIFY_CLIENT_SECRET = "YOUR_CLIENT_SECRET"
 SPOTIFY_REDIRECT_URI = "http://127.0.0.1:8888/callback"
 
 def authenticate_youtube():
